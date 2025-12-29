@@ -8,5 +8,8 @@
     --title-color: #db00ff;
     --decor-color: #ff0070;
 
+    --section-title-color: #000028;
+    --paragraph-color: #f1b2ce;
+
     --bg-image: url('../images/cover-image-dark.png');
 }
