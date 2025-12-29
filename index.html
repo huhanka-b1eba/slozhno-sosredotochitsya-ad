@@ -1,40 +1,199 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
-  </head>
-  <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="color-scheme" content="dark light" />
+
+  <title>Сложно сосредоточиться</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="./images/favicon.ico" sizes="any" />
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+
+  <!-- шрифты -->
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+
+  <!-- стили (строго в этом порядке) -->
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/dark.css" />
+  <link rel="stylesheet" href="./styles/light.css" />
+
+  <!-- скрипт -->
+  <script src="./scripts/script.js" defer></script>
+</head>
+
+<body class="page">
+<header class="header decorated-zone">
+  <nav class="header__theme-menu">
+    <ul class="header__theme-menu-list">
+      <li class="header__theme-menu-item">
+        <button
+                class="header__theme-menu-button header__theme-menu-button_type_light"
+        >
+          День
+        </button>
+      </li>
+      <li class="header__theme-menu-item">
+        <button
+                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                disabled
+        >
+          Авто
+        </button>
+      </li>
+      <li class="header__theme-menu-item">
+        <button
+                class="header__theme-menu-button header__theme-menu-button_type_dark"
+        >
+          Неон
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- декоративный REC -->
+  <span class="header__rec" aria-hidden="true"></span>
+
+  <h1 class="header__title">
+    сложно<br />
+    сосредоточиться
+  </h1>
+
+  <p class="header__description title-decor">
+    Что делать, когда не можешь делать ничего
+    или почему нам так сложно сконцентрироваться,
+    особенно когда очень надо
+  </p>
+</header>
+
+<main class="content">
+  <section class="content-section">
+    <h2 class="content-section__title title-decor">
+      Почему сосредоточиться так сложно
+    </h2>
+
+    <div class="content-section__articles">
+      <article class="content-section__article">
+        <h3 class="content-section__subtitle">
+          Многозадачность
+        </h3>
+        <p class="content-section__text">
+          Особенно сложно сосредоточиться, когда приходится
+          держать в голове сразу несколько дел.
+        </p>
+      </article>
+
+      <article class="content-section__article">
+        <h3 class="content-section__subtitle">
+          Дофамин
+        </h3>
+        <p class="content-section__text">
+          Мозг привыкает к быстрому вознаграждению и требует
+          его снова и снова.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section class="content-section content-section_theme_dark">
+    <h2 class="content-section__title">
+      Что снижает концентрацию внимания
+    </h2>
+
+    <ul class="content-section__list">
+      <li class="content-section__item">
+        <h3 class="content-section__subtitle">
+          Шум
+        </h3>
+        <p class="content-section__text">
+          Даже негромкие звуки могут отвлекать.
+        </p>
+      </li>
+
+      <li class="content-section__item">
+        <h3 class="content-section__subtitle">
+          Недосып
+        </h3>
+        <p class="content-section__text">
+          Без полноценного сна мозг работает хуже.
+        </p>
+      </li>
+    </ul>
+  </section>
+  <section class="content-section content-section_full">
+    <h2 class="content-section__title title-decor">
+      Как концентрироваться лучше
+    </h2>
+
+    <div class="content-section__cards">
+      <article class="content-card">
+        <h3 class="content-card__title">
+          5 простых шагов
+        </h3>
+        <p class="content-card__text">
+          Представьте себе человека, который спокойно
+          и вдумчиво выполняет задачу.
+        </p>
+        <p class="content-card__text">
+          Он не отвлекается на уведомления и не проверяет
+          социальные сети каждые пять минут.
+        </p>
+      </article>
+
+      <article class="content-card">
+        <h3 class="content-card__title">
+          Принцип «одного дела»
+        </h3>
+        <p class="content-card__text">
+          Попробуйте выполнять задачи по одной —
+          это действительно работает.
+        </p>
+        <p class="content-card__text">
+          Подробнее можно прочитать
+          <a href="https://ru.wikipedia.org/wiki/Многозадачность" target="_blank">
+            здесь
+          </a>.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section class="gallery">
+    <h2 class="gallery__title title-decor">
+      А вот так выглядит концентрация
+    </h2>
+
+    <ul class="gallery__list">
+      <li class="gallery__item">
+        <img src="./images/sunset.png" alt="Закат" loading="lazy" />
+      </li>
+      <li class="gallery__item">
+        <img src="./images/ice-cream.png" alt="Мороженое" loading="lazy" />
+      </li>
+      <li class="gallery__item">
+        <img src="./images/street.png" alt="Улица" loading="lazy" />
+      </li>
+      <li class="gallery__item">
+        <img src="./images/books.png" alt="Книги" loading="lazy" />
+      </li>
+      <li class="gallery__item">
+        <img src="./images/mobile-icon.png" alt="Телефон" loading="lazy" />
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer decorated-zone">
+  <h2 class="footer__title">
+    сложно<br />
+    сосредоточиться
+  </h2>
+</footer>
+
+
+
+</body>
 </html>
